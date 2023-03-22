@@ -1,0 +1,91 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+}
+
+header {
+    color: #46937b;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin-left: 2rem;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    margin-right: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #46937b;
+}
+
+li > a {
+    padding: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #fdc4bc;
+}
+
+#home-image {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    color: #46937b;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.book-card {
+    display: grid;
+}
+
+.book-text {
+    text-align: center;
+    color: #014040;
+}
+
+h3 {
+    color: #46937b;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.book-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 18%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.book-form {
+    display: flex;
+    justify-content: center;
+}
+
+.add {
+    margin-left: 5px;
+}
+
+.delete {
+    display: flex;
+    justify-content: center;
+}

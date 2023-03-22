@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <section class=book-card>
+    <p>
+      {% for book in all_books %}  
+        <div><br>
+        <a href="/books/{{book.id}}">
+        <img class="book-image" src="{{ book.image }}" width="220" height="350"/>
+        </a>
+    </p>
+        <p class="book-text">
+        <a href="/books/{{book.id}}">
+            <b>{{ book.title }}</b>
+        </a> 
+        <br>
+        <i>by</i>
+        <br>
+        {{ book.author.name }}
+        <br>
+        <section class="delete">
+            <form action="/books/{{ book.id }}/delete" method="post">
+                <input style="height:30px; width:50vh" type="submit" value="Delete">
+            </form>
+        </section>
+      {% endfor %}
+        <br></div>
+      </p>
+    </section>
+{% endblock %}

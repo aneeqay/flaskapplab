@@ -1,0 +1,54 @@
+<!-- {% extends "base.html" %}
+{% block content %}
+
+<form action="/books/{{book.id}}" method="post">
+  <div>
+    <label for="title">Book Title:</label>
+    <input type="text" id="title" name="title" value="{{book.title}}" required autofocus>
+  </div> -->
+
+
+  
+  <!-- <div>
+    <label for="duration">Duration:</label>
+    <input type="number" id="duration" name="duration" value="{{task.duration}}" required>
+  </div>
+
+  <div>
+    <label for="completed">Completed:</label>
+    <select id="completed" name="completed">
+
+      <option value="true"
+        {% if task.completed == True %} selected="selected" {% endif %}>
+        True
+      </option>
+
+      <option value="false"
+        {% if task.completed == False %} selected="selected" {% endif %}>
+        False
+      </option>
+
+    </select>
+  </div>
+
+  <div>
+    <label for="user">User:</label>
+    <select id="user" name="user_id">
+      {% for user in all_users %}
+        <option value="{{ user.id }}"
+          {% if task.user.id == user.id %} selected="selected"{% endif %}>
+          {{ user.first_name }}
+        </option>
+      {% endfor %}
+    </select>
+  </div>
+
+  <button type="submit">Update Task</button>
+
+</form>
+
+<form class="delete-form" action="/tasks/{{task.id}}/delete" method="POST">
+    <button class="trash-button"><i class="fa fa-trash-o fa-3x" style="color:red" aria-hidden="true"></i></button>
+</form>
+
+{% endblock %} -->

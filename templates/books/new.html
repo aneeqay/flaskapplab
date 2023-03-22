@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h3>Add book to catalogue</h3>
+<section class="book-form">
+    <form action="/books" method="post">
+      <label for="title">Book Title</label>
+      <input style="height:30px; width:50vh" type="text" name="title" id="title" placeholder="Enter book title" line-height="30px" >
+      <br>
+      <label for="author">Author</label>
+      <input style="height:30px; width:50vh" type="text" name="author" id="author" placeholder="Enter author">
+      <br>
+      <label for="link"><a href="https://app.thestorygraph.com/">Storygraph</a> link</label>
+      <input style="height:30px; width:50vh" type="text" name="link" id="link" placeholder="Enter the link to the book's page on Storygraph">
+      <br>
+      <label for="image">Book image</label>
+      <input style="height:30px; width:50vh" type="text" name="image" id="image" placeholder="Enter a link to an image of the book e.g. from Storygraph">
+      <br>
+      <input style="height:30px; width:50vh" type="submit" value="Add" class="add">
+    </form>
+</section>
+{% endblock %}

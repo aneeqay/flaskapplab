@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}  
+<section>
+    <br>
+    <a href="{{ book.link }}" target="_blank">
+    <img class="book-image" src="{{ book.image }}" width="220" height="350"/></a>
+    <div class="book-text">
+    <h3><a href="{{ book.link }}" target="_blank">{{ book.title }}</a></h3>
+    <p><em>by</em>
+    <br>
+    {{ book.author.name }}
+    <br>
+    <br>
+    </p></div>
+</section>
+<!-- <button><a href='/books/{{book.id}}/edit'>Edit</a></button> -->
+<section class="delete">
+    <form action="/books/{{ book.id }}/delete" method="post">
+        <input style="height:30px; width:50vh" type="submit" value="Delete">
+    </form>
+</section>
+{% endblock %}

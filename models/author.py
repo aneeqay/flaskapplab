@@ -1,5 +1,5 @@
 class Author:
 
-    def __init__(self, id, name):
-        self.id = id
+    def __init__(self, name, id = None):
         self.name = name
+        self.id = id
